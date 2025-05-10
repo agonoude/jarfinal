@@ -101,7 +101,7 @@ font-family:Cambria, serif;
 font-size: 16;
 overflow: hidden;
 white-space: nowrap;
-animation: typing 10s steps(40,end);
+animation: typing 10s steps(10000,end);
 }  
   /* The typing effect */
   @keyframes typing {
