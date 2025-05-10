@@ -99,11 +99,10 @@ width:100%;
 .narratortext{
 font-family:Cambria, serif;
 font-size: 16;
-
 overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 7.5s steps(1000, end);
-  }
+white-space: nowrap; /* Keeps the content on a single line */
+animation: typing 7.5s steps(40, end);
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -116,7 +115,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 /*text specifics*/
 font-family: comicsansms;
 text-align: center;
-animation: typing 10s steps(1000,end);
+animation: typing 10s steps(40,end);
 }
 
 
