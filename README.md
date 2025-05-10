@@ -22,3 +22,13 @@ but that's a lot of work that takes a lot of time
 
 05/10/2025 - 6:31 am
 okay i had to stop working at 6:30 because i have to drive so that is why my final is like halfway done as of saturday whenever you grade it sorry (please i have had to do so much more for this)
+
+
+05/10/2025 - 2:09 pm
+i drove over 200 miles
+i am on no sleep
+i just want to finish this project
+but i fear that you have already graded it and failed me
+i'm still going to add my cool stuff tho lol i love jared project + this stuff is actually really fun
+k thx bai
+
