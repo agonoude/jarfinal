@@ -88,7 +88,7 @@ font-size: 16;
 
 overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 10s steps(1000, end);
+    animation: typing 7.5s steps(1000, end);
   }
   
   /* The typing effect */
