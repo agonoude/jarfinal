@@ -188,7 +188,7 @@ animation: typing 10s steps(1000,end);
    {__||__}
  </pre>          
 
-<p class="jaredtext changingText"><p id="changingText">minimize???</p></p>
+<p class="jaredtext changingText"><p id="changingText">1minimize???</p></p>
   
 </div>
 </div>
@@ -202,13 +202,13 @@ animation: typing 10s steps(1000,end);
       document.getElementById('namePlaceholder').textContent = name;
     }
   const phrases = [
-    "wait-WAIT WHAT", "WOAAAAAAAH!!!!!!!!!!!!!!!!", "oh my goodness! what! what was that!", "how is this even possible????????",
+    "minimize???","wait-WAIT WHAT", "WOAAAAAAAH!!!!!!!!!!!!!!!!", "oh my goodness! what! what was that!", "how is this even possible????????",
     "`how did you do that ${name}???????????`"
   ];
 
  let index = 0;
   const textElement = document.getElementById("changingText");
-  // Function to update the text
+  // update the text
   function updateText() {
     if (index < phrases.length) {
       textElement.innerText = phrases[index];
