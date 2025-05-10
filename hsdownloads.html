@@ -65,17 +65,20 @@
       top: 125px;
       left: 125px;
     }
-    .icon8 {
-      top: 200px;
-      left: 125px;
-    }
-    #jareddiv {
+#jareddiv {
       position: absolute;
       right:50px;
       top:50px;
       z-index: 9;
       background-color: #000000;
       text-align: center;
+     /* border: 1px solid #d3d3d3;*/
+      color: white;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      resize: none;
+      word-wrap: break-word;
     }
     #jareddivheader {
       right: 100px;
@@ -86,11 +89,10 @@
     }
 
     /*i have to add the jared dancing style stuff here too bc the js won't recognize it from style for some reason + i am too lazy to figure it out*/
-  .text-container {
+.text-container {
   text-align: center; /* Center inline-block child */
   width: 100%;
 }
-
 /*jared text*/
 .jaredtext{
 /*text specifics*/
@@ -176,8 +178,9 @@ overflow: hidden;
     <img src="assets/folder.png" alt="Icon 8" />
     <div>Other</div>
   </div>
+ <!--start of jared div-->
 <div id="jareddiv">
-  <div id="jareddivheader"><pre>                                         - | x </pre></div> 
+  <div id="jareddivheader"><pre>                               - | x </pre></div> 
 <!--jared dance-->
 <div class="smalljared" style="color:white">
   <pre>
@@ -192,10 +195,11 @@ overflow: hidden;
    {__||__}
  </pre>          
 
-<div class="text-container"><p class="jaredtext changingText">1minimize???</p></div>
+<div class="text-container"><p class="jaredtext changingText">minimize???</p></div>
   
 </div>
 </div>
+<!--end of jared div-->
 
 <div id="folderdiv">
   <div class="icon-container testingpng">
@@ -204,18 +208,17 @@ overflow: hidden;
   </div>
 </div>
 
-<!--yapping-->
 <script>
-
 //name calling (but in a nice way)
-    const name = localStorage.getItem('userName')||"";
-    if (name) {
-      document.getElementById('namePlaceholder').textContent = name;
-    }
+  const name = localStorage.getItem('userName') || "";
+const namePlaceholder = document.getElementById('namePlaceholder');
+if (namePlaceholder && name) {
+  namePlaceholder.textContent = name;
+}
   const phrases = [
-    "testingfordownloads lol",
-    `how did you do that ${name}???????????`,"...it's so beautiful...there's so much life...wait, are those folders?? can you open them!??!?", 
-    "testingfordownloads lol"
+    "minimize???","wait-WAIT WHAT", "WOAAAAAAAH!!!!!!!!!!!!!!!!", "oh my goodness! what! what was that!", "how is this even possible????????",
+    `how did you do that ${name}???????????`,"...it's so beautiful...there's so much life...","wait, are those folders??",
+    "can you open them!??!?"
   ];
 
  let index = 0;
@@ -229,9 +232,9 @@ overflow: hidden;
       clearInterval(interval);
     }
   }
-  // interval for 30 seconds (30,000 ms)
+  // interval for 5.5 seconds (7,500 ms)
   updateText();
-  const interval = setInterval(updateText, 15000);
+  const interval = setInterval(updateText, 5500);
 </script>
 
 <!--jared div script-->
@@ -280,5 +283,6 @@ function dragElement(elmnt) {
   }
 }
 </script>
+
 </body>
 </html>
