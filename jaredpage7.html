@@ -79,29 +79,124 @@
   <br>(or at least that's what he says hehe)
 </p>
   
+
+
+<!--begin copying (this is okay it is my code to copy)-->
 <!--parent div-->
 <div class="float-parent-element">
 
-  <!--"yes" response-->
-      <div class="yesresponse">
-      <!--text insert-->
-      <a href="jaredpage8.html" style="text-decoration:none; color:white">wow! how come you've never tried leaving?</a>
-      </div>
-  
-  <!--"no" response-->
+<!--"yes" response-->
     <div class="noresponse divtest2">
-      <!--text insert-->
-      <div class="jaredpopup divtest2">jared... tom is a rock... he can't move by himself</div> 
-  
-      <div class="jaredpopup divtest">
-          <pre>
-    
-            <p style="color:red">says who?</p>
-             
-          </pre>
-        </div>
+    <!--text insert-->
+        <a href="jaredpage7.html;" style="text-decoration:none; color:white">wow! how come you've never tried leaving??</a>
+    </div>
+
+<!--"no" response-->
+  <div class="noresponse divtest2">
+    <!--text insert-->
+    <a href="javascript:void(0);" onclick="showPopup()" style="text-decoration:none; color:white">jared... tom is a rock... he can't move by himself.</a>
+
+
+<!-- The pop-up div -->
+<div id="mydiv">
+  <div id="mydivheader" style="color:black">top2bar2top2bar2top2bar2top2bar2top2bar2top2bar</div>
+
+<div class="smalljared"> 
+  <pre>says who?</pre>
+  <pre style="color:rgb(11, 11, 11)">
+    __________
+         /          \_____
+         /  <span style="color:rgb(76, 53, 53)">.   .</span>          \
+         |   \___/           \
+          \___________________/
+ </pre>          
+</div>
+</div>
+
+<script>
+// Function to show the pop-up
+function showPopup() {
+  document.getElementById('mydiv').style.display = 'block';
+  // Optional: You can adjust the position where the pop-up appears
+  document.getElementById('mydiv').style.top = '0px';
+  document.getElementById('mydiv').style.left = '0px';
+}
+
+// Make the DIV element draggable
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
     </div>
 </div>
+
+<div id="overlay"></div>
+<div id="modal">
+  <div id="sketch-container"></div>
+  <button id="closeBtn">Close</button>
+</div>
+
+<script>
+const triggerText = document.getElementById("trigger-text");
+const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+const closeBtn = document.getElementById("closeBtn");
+
+triggerText.addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+</script>
 
   </body>
 </html>
