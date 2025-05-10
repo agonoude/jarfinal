@@ -314,18 +314,14 @@ background-color: red;
     0%{
         content:'o';
     }
-    50%{
-        content: '_';
-    }
-
+    50%{content: '_';}
+    55%{content:'o'}
     100%{content:'o'}
 }
-
 .blinkingtop:before{
     content:'_';
     animation:jaredblinktop infinite 5s;
 }
-
 @keyframes jaredblinktop {
     0%{
         content:'_';
@@ -333,6 +329,8 @@ background-color: red;
     50%{
         content: ' ';
     }
+
+    55%{content:'_'}
 
     100%{content:'_'}
 }
