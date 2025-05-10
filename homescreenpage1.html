@@ -199,7 +199,8 @@ animation: typing 10s steps(40,end);
     }
   const phrases = [
     "minimize???","wait-WAIT WHAT", "WOAAAAAAAH!!!!!!!!!!!!!!!!", "oh my goodness! what! what was that!", "how is this even possible????????",
-    `how did you do that ${name}???????????`,"...it's so beautiful...there's so much life...","wait, are those folders?? can you open them!??!?"
+    `how did you do that ${name}???????????`,"...it's so beautiful...there's so much life...","wait, are those folders??",
+    "can you open them!??!?"
   ];
 
  let index = 0;
@@ -213,12 +214,10 @@ animation: typing 10s steps(40,end);
       clearInterval(interval);
     }
   }
-  // interval for 15 seconds (15,000 ms)
+  // interval for 7.5 seconds (7,500 ms)
   updateText();
-  const interval = setInterval(updateText, 15000);
+  const interval = setInterval(updateText, 7500);
 </script>
-
-
 
 <!--jared div script-->
 <script>
