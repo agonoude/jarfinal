@@ -14,7 +14,15 @@
 
 <!--jared yapping-->
 <p class="jaredtext">
-  oh, okay good! i hope i can trust you! before you was [%@$!9@] and [B2#18&$], and, um, overally, they were not, um, very good people...
+  oh, well, hello, <span id="namePlaceholder">[name]</span>!
+  <script>
+    const name = localStorage.getItem('userName');
+    if (name) {
+      document.getElementById('namePlaceholder').textContent = name;
+    }
+  </script>
+  
+  i hope i can trust you! before you was [%@$!9@] and [B2#18&$], and, um, overally, they were not, um, very good people...
   <br>
 
   <br> but its okay! because you're a good person! and you're here to stay!
@@ -40,9 +48,9 @@
 
 <!--jared question-->
 <p class="jaredtext">
-y'know... i have always wanted to see the stars... maybe i should try "leaving" one of these days...
+y'know... i have always wanted to see <i>the stars</i>... maybe i should try "leaving" one of these days...
 <br>
-<br>i mean... <b>ALANNA</b> does it all the time... maybe i can go be with her again! and i'll prove tom wrong!
+<br> but i don't really know how i could do that...
 </p>
 
 <!--personal choice response boxes-->
@@ -53,23 +61,90 @@ y'know... i have always wanted to see the stars... maybe i should try "leaving" 
 <!--"yes" response-->
     <div class="yesresponse">
     <!--text insert-->
-    <a href="jaredbadending.html" style="text-decoration:none; color:rgb(213, 197, 197)">no.</a>
+    <a href="homescreen.html" style="text-decoration:none; color:rgb(255, 255, 255)">i mean, couldn't i just minimize the window?</a>
     </div>
 
-<!--"no" response-->
-  <div class="noresponse">
+    <!--"no" response-->
+  <div class="noresponse divtest2">
     <!--text insert-->
-    <div class="jaredpopup">
-      <a href="jaredgoodending.html" style="text-decoration:none; color:white">yes!</a>
+    <a href="javascript:void(0);" onclick="showPopup()" style="text-decoration:none; color:white">bro you are a computer program what do you mean by "LEAVING"</a>
+
+
+<!-- The pop-up div -->
+<div id="mydiv">
+  <div id="mydivheader" style="color:black">top2bar2top2bar2top2bar2top2bar2top2bar2top2bar</div>
+
+<div class="smalljared"> 
+  <pre>this one i actually agree with/pre>
+  <pre style="color:rgb(11, 11, 11)">
+    __________
+         /          \_____
+         /  <span style="color:rgb(76, 53, 53)">.   .</span>          \
+         |   \___/           \
+          \___________________/
+ </pre>          
+</div>
+</div>
+
+<script>
+// Function to show the pop-up
+function showPopup() {
+  document.getElementById('mydiv').style.display = 'block';
+  // Optional: You can adjust the position where the pop-up appears
+  document.getElementById('mydiv').style.top = '0px';
+  document.getElementById('mydiv').style.left = '0px';
+}
+
+// Make the DIV element draggable
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+
+
 
     </div> 
       </div>
-
-  </div>
-
-
-
-</div>
 
 
 
