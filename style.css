@@ -301,6 +301,53 @@ background-color: red;
 
 
 
+/*ok im gonna try to make jared blink for fun lol*/
+
+/*blink*/
+.blinkingbottom:before{
+    content:'o';
+    animation:jaredblinkbottom infinite 5s;
+}
+
+@keyframes jaredblinkbottom {
+    0%{
+        content:'o';
+    }
+    50%{
+        content: '_';
+    }
+
+    100%{content:'o'}
+}
+
+.blinkingtop:before{
+    content:'_';
+    animation:jaredblinktop infinite 5s;
+}
+
+@keyframes jaredblinktop {
+    0%{
+        content:'_';
+    }
+    50%{
+        content: ' ';
+    }
+
+    100%{content:'_'}
+}
+
+
+/*jared blinking done do not touch anything above this*/
+
+
+
+
+
+
+
+
+
+
 /*toms shelf*/
 .backgroundimage2{
     background-image: url('https://github.com/agonoude/jaredstory/blob/main/tomsportal.gif?raw=true');
