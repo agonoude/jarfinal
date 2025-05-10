@@ -99,10 +99,10 @@ width:100%;
 .narratortext{
 font-family:Cambria, serif;
 font-size: 16;
-overflow: hidden; /* Ensures the content is not revealed until the animation */
-white-space: nowrap; /* Keeps the content on a single line */
-}
-  
+overflow: hidden;
+white-space: nowrap;
+animation: typing 10s steps(40,end);
+}  
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -112,7 +112,6 @@ white-space: nowrap; /* Keeps the content on a single line */
   text-align: center; /* Center inline-block child */
   width: 100%;
 }
-
 /*jared text*/
 .jaredtext{
 /*text specifics*/
@@ -120,7 +119,6 @@ font-family: comicsansms;
 display: inline-block;        
 white-space: nowrap;
 overflow: hidden;
-animation: typing 10s steps(40,end);
 }
 /*response tags for player*/
 
