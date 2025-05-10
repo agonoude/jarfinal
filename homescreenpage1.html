@@ -214,7 +214,7 @@ animation: typing 10s steps(40,end);
   ];
 
  let index = 0;
-  const textElement = document.getElementById("changingText");
+  const textElement = document.querySelector(".changingText");
   // update the text
   function updateText() {
     if (index < phrases.length) {
