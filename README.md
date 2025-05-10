@@ -19,3 +19,6 @@ things i want to do in the future (probably once i get back from driving to almo
 - my own interactive file layouts + stuff (probably using screenshots from my half broken windows laptop lol)
 
 but that's a lot of work that takes a lot of time
+
+05/10/2025 - 6:31 am
+okay i had to stop working at 6:30 because i have to drive so that is why my final is like halfway done as of saturday whenever you grade it sorry (please i have had to do so much more for this)
