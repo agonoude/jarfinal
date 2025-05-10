@@ -13,8 +13,9 @@ i am really happy with this version
 
 it may be too similar to the original, but honestly, i think it's better, and it's simpler, and more fun for me :) plus i can add more interaction, since it's less javascript and more html/css, which i am 10,000x more comfortable with
 
+things i want to do in the future (probably once i get back from driving to almost iowa, by saturday at noon):
+- more tom pop ups lol
+- more files to search through
+- my own interactive file layouts + stuff (probably using screenshots from my half broken windows laptop lol)
 
-
-
-
-
+but that's a lot of work that takes a lot of time
