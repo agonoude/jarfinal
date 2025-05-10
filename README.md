@@ -6,7 +6,8 @@ new content from original piece
 - user can input name (!!!!)
 - the pop ups are *actually* pop ups (from https://www.w3schools.com/howto/howto_js_popup.asp—which I CAN copy legally+it actually makes sense to me lol)
 - files to click through on the homescreen :)
-- javaSCRIPT not p5.js because honestly having to go through a sketch for all the <script> stuff would be a nightmare + javascript is the same + easier to use once you understand the stuff from w3 schools lol (i know it's an art class but like i don't really enjoy p5.js and it was a genuine nightmare to use for the final so if that makes me fail, then I actually don't know what to do lol)
+- more animations
+- javaSCRIPT not p5.js because honestly having to go through a sketch for all the <script> stuff would be a nightmare + javascript is the same + easier to use once you understand the stuff from w3 schools lol (i know it's an art class but like i don't really enjoy p5.js and it was a genuine nightmare to use for the final so if that makes me fail, then i actually don't know what to do or tell you lol)
 
 i am really happy with this version
 
