@@ -204,7 +204,7 @@ animation: typing 10s steps(40,end);
 <script>
 
 //name calling (but in a nice way)
-    const name = localStorage.getItem('userName');
+    const name = localStorage.getItem('userName')||"";
     if (name) {
       document.getElementById('namePlaceholder').textContent = name;
     }
@@ -226,7 +226,7 @@ animation: typing 10s steps(40,end);
   }
   // interval for 30 seconds (30,000 ms)
   updateText();
-  const interval = setInterval(updateText, 30000);
+  const interval = setInterval(updateText, 15000);
 </script>
 
 
