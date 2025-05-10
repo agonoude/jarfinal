@@ -108,7 +108,7 @@ font-family: comicsansms;
 display: inline-block;        
 white-space: nowrap;
 overflow: hidden;
-animation: typing 10s steps(40,end);
+animation: typing 10s steps(100,end);
 }
 /*jared dancing*/
 .spantest:before{
@@ -192,10 +192,11 @@ animation: typing 10s steps(40,end);
 <!--yapping-->
 <script>
 //name calling (but in a nice way)
-    const name = localStorage.getItem('userName')||"";
-    if (name) {
-      document.getElementById('namePlaceholder').textContent = name;
-    }
+  const name = localStorage.getItem('userName') || "";
+const namePlaceholder = document.getElementById('namePlaceholder');
+if (namePlaceholder && name) {
+  namePlaceholder.textContent = name;
+}
   const phrases = [
     "222minimize???","wait-WAIT WHAT", "WOAAAAAAAH!!!!!!!!!!!!!!!!", "oh my goodness! what! what was that!", "how is this even possible????????",
     `how did you do that ${name}???????????`,"...it's so beautiful...there's so much life...","wait, are those folders??",
