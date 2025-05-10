@@ -109,16 +109,20 @@ animation: typing 7.5s steps(40, end);
     from { width: 0 }
     to { width: 100% }
   }
+.text-container {
+  text-align: center; /* Center inline-block child */
+  width: 100%;
+}
 
 /*jared text*/
 .jaredtext{
 /*text specifics*/
 font-family: comicsansms;
-text-align: center;
+display: inline-block;        
+white-space: nowrap;
+overflow: hidden;
 animation: typing 10s steps(40,end);
 }
-
-
 /*response tags for player*/
 
 /*parent div boxes*/
