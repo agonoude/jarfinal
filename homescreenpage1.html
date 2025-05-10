@@ -71,6 +71,8 @@
     }
     #jareddiv {
       position: absolute;
+      right:50px;
+      top:50px;
       z-index: 9;
       background-color: #000000;
       text-align: center;
@@ -90,18 +92,15 @@
       color: #fff;
     }
 /*i have to add the jared dancing style stuff here too bc the js won't recognize it from style for some reason + i am too lazy to figure it out*/
-  
-  /* The typing effect */
+    /* The typing effect */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-
 .text-container {
   text-align: center; /* Center inline-block child */
   width: 100%;
 }
-
 /*jared text*/
 .jaredtext{
 /*text specifics*/
@@ -111,7 +110,6 @@ white-space: nowrap;
 overflow: hidden;
 animation: typing 10s steps(40,end);
 }
-
 /*jared dancing*/
 .spantest:before{
     content:'';
@@ -126,6 +124,7 @@ animation: typing 10s steps(40,end);
         content: '  // / \005C   //';
     }    100%{content:' \005C\005C   \002F  \005C   //'}}
 /*jared dance done do not touch anything above this*/
+
   </style>
 </head>
 <body>
@@ -170,7 +169,7 @@ animation: typing 10s steps(40,end);
   </div>
 
 <div id="jareddiv">
-  <div id="jareddivheader"><pre>                                         - | x </pre></div> 
+  <div id="jareddivheader"><pre>                  - | x </pre></div> 
 <!--jared dance-->
 <div class="smalljared" style="color:white">
   <pre>
@@ -185,7 +184,7 @@ animation: typing 10s steps(40,end);
    {__||__}
  </pre>          
 
-<div class="text-container"><p class="jaredtext changingText">1minimize???</p></div>
+<div class="text-container"><p class="jaredtext changingText">minimize???</p></div>
   
 </div>
 </div>
@@ -214,7 +213,7 @@ animation: typing 10s steps(40,end);
       clearInterval(interval);
     }
   }
-  // interval for 30 seconds (30,000 ms)
+  // interval for 15 seconds (15,000 ms)
   updateText();
   const interval = setInterval(updateText, 15000);
 </script>
