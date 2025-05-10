@@ -111,7 +111,13 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
     to { width: 100% }
   }
 
-
+/*jared text*/
+.jaredtext{
+/*text specifics*/
+font-family: comicsansms;
+text-align: center;
+animation: typing 10s steps(1000,end);
+}
 
 
 /*response tags for player*/
@@ -184,12 +190,7 @@ z-index:3;
 
 
   
-/*jared text*/
-.jaredtext{
-/*text specifics*/
-font-family: comicsansms;
-text-align: center;
-}
+
 
 /*.jaredspacing{
 color:black;
